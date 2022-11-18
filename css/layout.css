@@ -1,0 +1,30 @@
+@charset "utf-8";
+
+@charset "utf-8";
+
+/* reset */
+html, body { width: 100%; height: 100%;}
+
+/* bg */
+#bg { width: 100%; height: 100%; background: url(../images/main2.jpg) center top no-repeat; position: fixed; z-index: 0;}
+
+#top { width: 100%; position: fixed; padding: 20px; box-sizing: border-box;}
+#top p.menu {float: left; width: 40px; height: 37px; white-space: nowrap;}
+#top p.menu img.menu_over {cursor: pointer;}
+#top h1.logo{float:left;cursor: pointer; margin-left: 120px; margin-top: 50px; font-size: 70px; font-style: normal; color: #000;}
+
+
+
+#wrap { width: 100%; min-width: 1000px; position: absolute; margin-top: 1000px;}
+#wrap figure { width: 25%;margin: 0; float: left; border: 0.5px solid rgb(67, 67, 67); box-sizing: border-box; cursor: pointer; position: relative;}/* 기준 */
+#wrap figure img { display: block; width: 100%; height: 100%;}
+#wrap figure figcaption {position: absolute; left: 0; top: 0; width: 100%; height: 100%; font-size: 5em; font-weight: bold; color: #fff; text-align: center; line-height: 7em; display: none;}/* 움직일대상 */
+#wrap figure:nth-child(4n+1) figcaption { background-color: rgba(255,0,0,0.3);}
+#wrap figure:nth-child(4n+2) figcaption { background-color: rgba(0,255,0,0.3);}
+#wrap figure:nth-child(4n+3) figcaption { background-color: rgba(0,0,255,0.3);}
+#wrap figure:nth-child(4n+4) figcaption { background-color: rgba(100,100,100,0.3);}
+#wrap figure:hover figcaption {display: block;}
+
+footer{ width: 100%; height: 180px; background-color: #333; position: fixed; left: 0; bottom: 0; color: #fff; text-align: center; line-height: 30px; font-size: 10px; font-weight: bold; z-index: 999;}
+
+
